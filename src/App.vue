@@ -11,9 +11,7 @@
     <button @click="logOut()">Wyloguj</button>
      </div>
     
- 
 
-  </div>
    </div>
 
 
@@ -21,8 +19,10 @@
 </template>
 
 <script>
+import "milligram"
+import LoginForm from "./LoginForm";
 export default {
-  name: 'app',
+  components: {LoginForm},
   data () {
     return {
       email: '',
